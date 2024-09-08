@@ -225,14 +225,7 @@ function addExperience(e) {
     let expStartDate = document.getElementById("eduStartDate").value;
     let expEndDate = document.getElementById("eduGraduationDate").value;
     let expDescription = document.getElementById("eduDescription").value;
-    if (!expTitle ||
-        !expOrganization ||
-        !expLocation ||
-        !expStartDate ||
-        !expEndDate ||
-        !expDescription) {
-        return alert("Please fill all the fields");
-    }
+    
     console.log(expTitle, expOrganization, expLocation, expStartDate, expEndDate, expDescription);
     experiencesDsp.innerHTML = `<div class="preview-item">
                                     <span class="preview-item-val">${expTitle}</span>
